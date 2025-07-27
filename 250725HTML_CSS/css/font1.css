@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+/*  글자의 굵기 바꾸기 */
+
+h1{
+    font-weight: normal;
+}
+
+/* bold 굵어짐  */
+p span{
+    font-weight: bold;
+}
