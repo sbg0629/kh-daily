@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+/* 넓이와 높이 설정하기 */
+article{
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+}
+/* 기본 0 */
+article:nth-last-of-type(1){
+    padding: 0px;
+
+}
+/* 패딩은 동서남북으로 30씩 가짐 */
+article:nth-last-of-type(1){
+    padding: 30px;
+
+}
