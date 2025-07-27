@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+/* 자손 선택 가능 */
+/*
+ul전체 선택 됌
+ul{
+    border: 1px solid blue; 
+}
+
+*/
+
+
+/* 
+ul의 li가 둘다 선택 됌
+ul li{
+    border: 1px solid blue; 
+}
+*/
+
+/* 자식 선택 가능 */
+ul > li{
+    border: 1px solid blue; 
+}
