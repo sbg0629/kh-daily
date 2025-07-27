@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+div{
+    
+    width:500px;
+    padding: 10px;
+    border: 1px solid #ccc ;
+}
+
+ui{
+    list-style-type: none;
+}
+li{
+    line-height: 2.0;
+}
+span{
+    font-weight: 700;
+    
+    color: #ad3000;
+}
