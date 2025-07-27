@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+/*블록요소 좌우 배치*/
+
+.wrap{
+    width: 800px;
+    border: 5px solid black;
+    margin: 100px auto;
+}
+.wrap .left{
+    width: 400px;
+    height: 400px;
+    background-color: pink;
+    /* float left 사용하면 밑에 lightblue가 깔려 있음 */
+    float: left; 
+
+   
+}
+
+/* 띄어쓰기 중요하네 이거 */
+.wrap .right{
+    width: 400px;
+    height: 400px;
+    background-color: lightblue;
+    float: right;
+    /* float: left; */
+}
+
