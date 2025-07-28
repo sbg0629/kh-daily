@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+ /* @규칙은 개발자가 애니메이션 중간중간의 특정 지점들을 거칠 수 있는 
+ 키프레임들을 설정함으로써 CSS 애니메이션 과정의 중간 절차를 제어할 수 있게 합니다.  */
+
+@keyframes rotation{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+article {
+  width: 400px;
+  height: 400px;
+  background: blue;
+  margin: 100px auto;
+  animation-name: rotation;
+  animation-duration:2s;
+  /* 일정한속도 */
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+  animation-play-state:running ;
+  transform: rotate(50deg);
+}
+/* 마우스 올리면 멈춤 */
+article:hover{
+  animation-play-state: paused ;
+}
