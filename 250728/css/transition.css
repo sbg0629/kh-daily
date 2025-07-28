@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+
+section {
+  width: 200px;
+  height: 200px;
+  margin: 50px;
+  border: 1px solid black;
+  float: left;
+  perspective: 400px;
+
+}
+
+section article {
+  width: 100%;
+  height: 100%;
+  background: blue;
+  opacity: 0.3;
+  transform: rotateY(0deg);
+  transition-property: transform opacity;
+  transition-duration: 1s;
+  transition-delay: 0s;
+
+  /* 처음과 끝은 상대적으로 느리게 중간은 빠르게 */
+  /* transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1.0); */
+
+  /* 일정한 속도 */
+  /* transition-timing-function: cubic-bezier(0.25, 0.25, 0.75, 0.75); */
+
+  /* 처음은 느리고 갈수록 빨라짐 */
+  /* transition-timing-function: cubic-bezier(0.42,0.0, 1.0, 1.0); */
+
+  transition-timing-function: cubic-bezier(0.0, 0.0, 0.58, 1.0);
+
+}
+
+/* section :hover 이렇게 되면 실행 안 함 
+hover 마우스 커서 접촉시 작동*/
+section:hover article {
+  transform: rotateY(45deg);
+  background: red;
+}
