@@ -1,0 +1,5 @@
+
+.AA input:focus{
+    outline: 3px solid red;
+    
+}
