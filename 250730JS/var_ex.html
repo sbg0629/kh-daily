@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var box; //box 변수 선언    
+        // 선언도 안 했을 떄
+        // uncaugh ReferenceError:box is not defined
+
+        box = 100;
+        // 값이 계속 바뀔 수 있음
+        box = 30;
+        
+        // 값이 계속 바뀔 수 있음(자바에서는 오류)
+        var box = 50;
+        // undefined : 선언만 했을 떄
+        document.write(box)
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
