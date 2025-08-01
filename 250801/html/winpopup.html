@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+    </Style>
+</head>
+<body>
+    <p>
+        <!-- usemap을 사용 하겠다 -->
+    <img src="../img/window_object_1.jpg" usemap="#intro">
+    <map name="intro">
+        <!-- x,y,x,y의 사각형 영역 -->
+         <!-- onclick ="window.close()">
+          마우스 클릭할 때 이벤트 발생해서 window 객체에 close 메소드를 창을 닫음. -->
+        <area shape="rect" coords="230,368,280,390" href="#" onclick="window.close()">
+    </map>
+    </p>
+</body>
+</html>
