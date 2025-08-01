@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #galleryZone {
+            text-align: center;
+        }
+    </style>
+    <script>
+        var num = 1;
+        function gallery(direct) {
+            if(direct){
+                if(num == 9){
+                    return;
+                }
+                //document.write("111");
+                num++;
+                
+            }else{
+                if(num == 1){
+                    return;
+                }
+                //document.write("222");
+                num--;
+            }
+            var imgTag = document.getElementById("photo");
+            //setAttribute 메소드로 속성을 부여(src 속성에 이피지 파일을 정함.)
+            //imgTag.setAttribute("src","../img/pic_2.jpg");//변수로 바꾸고 1씩 증가 시키면 가능
+            imgTag.setAttribute("src", "../img/pic_"+num+".jpg");
+            
+        }
+
+
+    </script>
+</head>
+
+<body>
+    <div id="galleryZone">
+        <p>
+            <img src="../img/pic_1.jpg" id="photo">
+            <!-- <button onclick="gallery()">다음</button> -->
+            <button onclick="gallery(0)">이전</button>
+            <button onclick="gallery(1)">다음</button>
+        </p>
+    </div>
+</body>
+
+</html>
