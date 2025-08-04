@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let arr =["홍길동","이순신","홍길자","김철수"];
+        let n1 = arr[0]; //n1에 홍길동을 넣겠다.
+        let n2 = arr[3]; //n2에 김철수를 넣겠다.
+        // console.log(n1,n2);//홍길동, 김철수
+
+        //destricturing 구조분해 할당
+        //배열 객체의 위치 요소 반환 받아서 a,b,c,d, 변수에 저장 
+        // let [a,b,c,d] = arr;
+        // console.log(a,b,c,d); //값
+        // console.log(arr); //배열
+
+        // let [m1,,,m2] = arr;
+        // console.log(m1,m2); //1,4번째 알아서 할당 
+
+        // let[...x] = arr;
+        // console.log(x); //arr 배열 객체를 배열 원소로 받아서 x배열객체로 출력
+
+        let[k1,k2,...all] = arr; //all:2개원소를 배열 객체로 출력
+        console.log(k1,k2,all); 
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
