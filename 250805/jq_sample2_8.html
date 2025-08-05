@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../jquery-3.7.1.js"></script>
+    <title>Document</title>
+    <script>
+        $(function () {  
+
+          var arr1=["대전","진주","부산","대구"];
+        //   map 메소드 :arr1 배열에서 value로 배열값을 가져오고 index로 인덱스 가져옴
+          var arr2=$.map(arr1,function(value,index){
+            // return value; ["대전","진주","부산","대구"]
+            // return index;[0,1,2,3]
+
+            // if(index == 1 ){
+            //     return value; [대전]
+            // }
+
+            // return true;
+            return false;
+          });
+
+          console.log("=== frist end ===");
+
+          var arr3=$.grep(arr1,function(a,b){
+        
+            // return a;  ["대전","진주","부산","대구"]
+            if(a =="부산"){
+                return true;
+            }else{
+                return false;
+            }
+          });
+          console.log(arr3);
+          
+         
+        });
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
