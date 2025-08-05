@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../jquery-3.7.1.js"></script>
+    <title>Document</title>
+    <script>
+        $(function () {
+            //제이쿼리 스타일을 변수로 처리
+            var style_1={
+            "background-color":"#0ff",
+            "border":"2px solid #f00"
+            }
+            var style_2={
+            "background-color":"#ff0",
+            "border":"2px solid #f00"
+            }
+            // $(".txt").css(style_1);
+            // prevAll()  이전 모든 요소
+            $(".txt").prevAll().css(style_1);
+            // nextAll() 다음 모든 요소
+            $(".txt").nextAll().css(style_1);
+        });
+    </script>
+</head>
+
+<body>
+    <div id = "warp">
+        <h1>인접 관계 선택자</h1>
+        <p>내용1</p>
+        <p class="txt">내용2</p>
+        <h3>내용3</h3>
+        <h4>내용4</h4>
+    </div>
+</body>
+
+</html>
