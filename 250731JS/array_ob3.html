@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Script>
+        var greenArr=["교대","방대","강남"];
+        var yellowArr=["미금","오리","죽전"];
+
+        //인덱스 2에서 1개를 삭제하고 서초 역삼을 추가
+        //splice메서드는 배열의 기존 요소를 삭제 또는 교체 하거나 
+        //새 요초를 추가하여 배열의 내용을 변경
+        greenArr.splice(2,1,"서초","역삼");
+        // console.log(greenArr);
+
+        var data1 = yellowArr.pop();//마지막 배열값인 죽전을 잘라내기해서 data1에 넣음.
+        var data2 = yellowArr.shift();//첫번째 인덱스 데이터 삭제
+        //첫번째 배열값인 미금을 잘라내기해서 data2에 저장
+
+        yellowArr.push(data2); //오리에 미금을 추가 
+        yellowArr.unshift(data1); //배열 객체의 가장 앞의 인덱스에 새 데이터를 삽입.
+        //죽전이 오리,미금 앞에 추가
+        console.log(data1);
+        console.log(yellowArr);
+        console.log(data2);
+        
+        
+    </Script>
+</head>
+<body>
+    
+</body>
+</html>

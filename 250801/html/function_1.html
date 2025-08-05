@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        //익명함수랑 일반함수 차이는 함수의 이름 유무.
+        var count =0;
+        
+        //호스팅 기능 사용 함수가 구현 되기전 호출 
+        myFnc(); 
+        
+        
+
+        //함수 구현
+        function myFnc(){//일반 함수
+            // document.write("hello"+count,"<br>"); 0 1 1 2
+            count++
+            document.write("hello"+count,"<br>");
+        }
+
+        myFnc(); 
+
+        theFnc(); //익명함수 호출은 오류 발생 (호이스팅 안됌)
+
+        // function myFnc(){
+        var theFnc = function() { //익명함수
+            count++
+            document.write("hello"+count,"<br>");
+        }
+        theFnc();
+
+        //함수 호출 (11~14코드 함수)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

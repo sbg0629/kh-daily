@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var str = "hello thank you good luck to you";
+
+        document.write(str.charAt(16), "<br>");
+        document.write(str.indexOf("you"), "<br>"); //첫번째 발견된 you의 인덱스가 12이다.
+        document.write(str.indexOf("you", 16), "<br>"); //16번째 인덱스에서(시작) 발견된 you의 인덱스
+        document.write(str.lastIndexOf("you"), "<br>"); //뒤에서 부터 첫번째 발견한 you인덱스
+        document.write(str.lastIndexOf("you", 25), "<br>");//25번째 에서 뒤에서부터 첫번째로 발견된 you인덱스.
+        document.write("================================", "<br>");
+        document.write(str.match("luck"), "<br>"); //luck 찾아서 출력 했다.
+        document.write(str.match("lack"), "<br>"); //lack 못 찾아서 null이다
+        document.write(str.search("luck"), "<br>"); //luck을 찾아서 인덱스를 출력.
+
+        document.write(str.search("you"), "<br>");
+        document.write(str.substr(21, 4), "<br>"); //21번째에서 부터 4개 출력
+        document.write(str.substring(6, 11), "<br>"); //6번째에서 부터 11번 인덱스 앞 까지 출력
+        document.write(str.substring(6, 11), "<br>"); //6번째에서 부터 11번 인덱스 앞 까지 출력
+        document.write(str.replace("you", "me"), "<br>"); //첫번째 you를 me로 바꿈 .
+        
+        document.write("================================", "<br>");
+        
+        document.write(str.toLowerCase(), "<br>"); //소문자로 변경
+        document.write(str.toUpperCase(), "<br>"); //대문자로 변경
+        document.write(str.length, "<br>"); //length는 괄호 뻄 문자 총 갯수
+        
+        document.write("================================", "<br>");
+        var arr = str.split(" ");
+        document.write(arr[0],"<br>");
+        document.write(arr[4],"<br>");
+
+        var str2 ="A";//아스키 코드 65
+        var t =str2.charCodeAt(0);
+        document.write(t,"<br>");
+        document.write(String.fromCharCode(65),"<br>");//65유니코드
+        document.write(String.fromCharCode(72),"<br>");//72유니코드
+        
+        document.write(str.charCodeAt(0),"<br>");
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+* {
+  margin: 0px;
+  padding: 0px
+}
+main{
+  width: 100%;
+  height: 100vh;
+  background: lightgreen;
+}
+
+section{
+ border: 10px solid blue;
+ 
+ display: flex;
+  /* flex-flow: column wrap; 기본축을 세로로 변경했다 */
+  flex-flow: row wrap;
+
+  /* 자식요소를 왼쪽부터 정렬 */
+  /* justify-content: flex-start;  */
+
+  /* 자식 요소를 오른쪽부터 정렬 */
+  /* justify-content: flex-end;  */
+  
+  /* 자식 요소를 중간 부터 정렬 */
+  /* justify-content: center;  */
+
+  /* 자식 요소를 양끝부터 나눠서 정렬 */
+  /* justify-content: space-between;  */
+
+  /* 자식 요소를 양끝에 여백이 추가 되어서 정렬 */
+  /* justify-content: space-around;  */
+
+  /* 자식 요소를 양끝에 여백이 균등하게 정렬 */
+  justify-content: space-evenly; 
+}
+
+section article{
+  width: 100px;
+  height: 100px;
+  background: aqua;
+  border: 1px solid #000;
+}

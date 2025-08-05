@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //es5 문자열 처리
+        var lname = "hong";
+        var fname = "gill dong"
+        // var memo = "나이:26  
+        // 경력:2 년";  오류 난다.
+        var memo = "나이:26 \n 경력:2 년";
+        var employee = "my name is " + lname + " " + fname + "\n" + memo;
+        console.log(employee);
+
+        //es5 문자열 처리
+        var lname = "hong";
+        var fname = "gill dong"
+        var memo = `나이:26  
+        경력: 2 년`;  //백틱문자(`)로 엔터를 침
+        // var memo = "나이:26 \n 경력:2 년";
+        var employee2 = "my name is " + lname + " " + fname + "\n" + memo;
+        console.log(employee2);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
