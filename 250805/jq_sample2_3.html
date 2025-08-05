@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../jquery-3.7.1.js"></script>
+    <title>Document</title>
+    <script>
+        $(function () {  
+            
+            // 3번째 요소
+            //인덱스 0 내용 1 인덱스1 내용2 인덱스2 내용3
+            $("#mune li").eq(2).css({"background-color":"#ff0"});
+
+            // lt(2) 인덱스2보다 작은 거 선택
+            $("#mune li:lt(2)").css({"background-color":"#0ff"});
+            
+            // gt(2) 인덱스 2보다 큰거 선택 
+            $("#mune li:gt(2)").css({"background-color":"#f0f"});
+            
+
+           
+        });
+    </script>
+</head>
+
+<body>
+    
+    <h1>탐색 선택자</h1>
+    <ul id ="mune">
+        <li>내용1</li>
+        <li>내용2</li>
+        <li>내용3</li>
+        <li>내용4</li>
+    </ul>
+</body>
+
+</html>
