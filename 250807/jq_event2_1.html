@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../js/jquery.js"></script>
+  <title>Document</title>
+  <script>
+    $(function () {
+      //fouce/blur 하위 요소 선택시 이벤트가 발생하지 않음
+
+      // $("#frm_1").on("focus",function(){
+      // focus : 키보드 이벤트지만 마우스로 찍어도 이벤트 발생함
+      $("#user_id_1,#user_pw_1").on("focus", function () {
+        //  $(this)는 현재 이벤트가 발생한 요소를 가리킵니다
+        //id,pw 가 마우스나 탭키가 선택되며 스타일 적용
+        $(this).css({ "background-color": "pink" })
+      });
+
+      // $("#frm_1").on("blur",function(){
+      $("#user_id_1,#user_pw_1").on("blur", function () {
+        
+        $(this).css({ "background-color": "#fff" })
+      });
+      
+      //focusin/focusout : 하위요소 선택시 이벤트 발생
+      $("#frm_2").on("focusin",function(){
+        // $("#user_id_1,#user_pw_1").on("blur", function () {
+        $(this).css({ "background-color": "pink" })
+      });
+      
+      $("#frm_2").on("focusout",function(){
+        // $("#user_id_1,#user_pw_1").on("blur", function () {
+        $(this).css({ "background-color": "#fff" })
+      });
+    });
+
+
+  </script>
+</head>
+
+<body>
+  <h1>focus / blur</h1>
+  <form action="#" id="frm_1">
+    <p>
+      <label for="user_id_1">Id1</label>
+      <input type="text" name="user_id_1" id="user_id_1">
+    </p>
+    <p>
+      <label for="user_pw_">Pw1</label>
+      <input type="password" name="user_pw_1" id="user_pw_1">
+    </p>
+  </form>
+  <h1>focusin / focusout</h1>
+  <form action="#" id="frm_2">
+    <p>
+      <label for="user_id_2">Id2</label>
+      <input type="text" name="user_id_2" id="user_id_2">
+    </p>
+    <p>
+      <label for="user_pw_2">Pw2</label>
+      <input type="password" name="user_pw_2" id="user_pw_2">
+    </p>
+  </form>
+
+
+</body>
+
+</html>
