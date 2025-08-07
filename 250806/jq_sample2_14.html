@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../js/jquery.js"></script>
+  <title>Document</title>
+  <script>
+
+    $(function () {
+      //inner_1 (하위 요소에 해당하는 클래스 선택)
+      $("#inner_1").find(".txt1").css({"background-color":"yellow"});
+      
+      // $("#inner_1 p").css({"background-color":"blue"});
+
+      // txt2를 찾을 것 같지만 p의 하위 요소에 해당하지 않아서 결과가 없다
+      // $("#inner_1 p").find(".txt2").css({"background-color":"blue"});
+
+      // inner_1 아이디의 p요소에서 해당 클래스를 선택 (하위가 아님)
+      $("#inner_1 p").filter(".txt2").css({"background-color":"blue"});
+    });
+
+
+  </script>
+</head>
+
+<body>
+  <div id="outer_wrep">
+    <h1>콘텐츠 탐색 전달자</h1>
+    <section id="inner_1">
+      <h2>find(), filter()</h2>
+      <p class ="txt1">내용1</p>
+      <p class ="txt2">내용2</p>
+    </section>
+  </div>
+
+</body>
+
+</html>
