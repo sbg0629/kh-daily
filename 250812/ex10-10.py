@@ -1,0 +1,12 @@
+def divide(a,b):
+    try:
+        c=a/b
+    except ZeroDivisionError: #분모가 0일때 처리 
+        print("0 나누기 오류가 발생")
+    # finally:
+    else:
+        print(c)
+
+divide(30,10)
+divide(30,0)
+
